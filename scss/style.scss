@@ -21,6 +21,7 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 
     .left {
         width: 45%;
@@ -55,18 +56,52 @@ h1 {
     }
 }
 .sec2 {
+    margin: auto;
+    width: 80%;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    flex-direction: row;
+
+    a {
+        text-decoration: none;
+        font-size: 19px;
+        color: #111;
+        margin: 95px;
+        font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        background: #fff;
+        padding: 15px;
+        border-radius: 45px;
+    }
+    a:hover {
+        color: #fff;
+        background: #000;
+        transition: 0.3s;
+    }
+}
+.sec3 {
     margin: 15px;
     width: 95%;
     height: 40vh;
-    background-color: #111;
+    background-color: none;
     border-radius: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    .sec2 video {
-            width: 100%;
-        }
+    .sec3 img {
+        width: 100%;
+    }
+    .sign {
+        color: rgb(116, 116, 116);
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        width: 40%;
+        font-size: 2.5em;
+    }
 }
     
 @media only screen and (max-width: 860px) {
@@ -83,4 +118,15 @@ h1 {
         width: 95%;
         height: 80%;
     }
+    .sec2 {
+        flex-direction: column;
+        width: 95%;
+    }
+    .sec2 > .btn1,.btn2 {
+        width: 50%;
+    }
+    .sec2 > iframe {
+        width: 100%;
+    }
+
   }
